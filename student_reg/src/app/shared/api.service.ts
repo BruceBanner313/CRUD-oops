@@ -13,7 +13,7 @@ export class ApiService {
   // Post Method For Add Student
   postStudent(data:any)
   {
-    return this._http.post<any>("https://crudcrud.com/api/122ce2a2611a44c29355907dc5c64887/post",data).pipe(map((res:any)=> {
+    return this._http.post<any>("https://crudcrud.com/api/5a7eefa0f4284c8c86d0236d9d829d11/student_det",data).pipe(map((res:any)=> {
       return res
     }))
   }
@@ -21,7 +21,7 @@ export class ApiService {
     // Get Method For All Student
     getStudent()
     {
-      return this._http.get<any>("https://crudcrud.com/api/122ce2a2611a44c29355907dc5c64887/post").pipe(map((res:any)=> {
+      return this._http.get<any>("https://crudcrud.com/api/5a7eefa0f4284c8c86d0236d9d829d11/student_det").pipe(map((res:any)=> {
         return res
       }))
     }
@@ -29,7 +29,7 @@ export class ApiService {
       // Put Method For Update Student
   putStudent(data:any, id:number)
   {
-    return this._http.put<any>("https://crudcrud.com/api/122ce2a2611a44c29355907dc5c64887/post/" + id,data).pipe(map((res:any)=> {
+    return this._http.put<any>("https://crudcrud.com/api/5a7eefa0f4284c8c86d0236d9d829d11/student_det/" + id,data).pipe(map((res:any)=> {
       return res
     }))
   }
@@ -37,7 +37,7 @@ export class ApiService {
   // Delete Method For Update Student
   deleteStudent(id:number)
   {
-    return this._http.delete<any>("https://crudcrud.com/api/122ce2a2611a44c29355907dc5c64887/post/" + id).pipe(map((res:any)=> {
+    return this._http.delete<any>("https://crudcrud.com/api/5a7eefa0f4284c8c86d0236d9d829d11/student_det/" + id).pipe(map((res:any)=> {
       return res
     }))
   }

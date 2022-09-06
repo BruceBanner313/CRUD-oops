@@ -70,7 +70,7 @@ export class StudentDashboardComponent implements OnInit {
     this.formValue.controls['email'].setValue(data.email);
     this.formValue.controls['class'].setValue(data.class);
     this.formValue.controls['password'].setValue(data.password);
-    this.studentobj.id = data.id;
+    this.studentobj. id = data.id;
     this.UpdateShowBtn();
   }
 
